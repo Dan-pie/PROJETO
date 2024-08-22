@@ -1,0 +1,27 @@
+
+{% block content %}
+{% for anuncio in anuncios %}
+<div id="imoveisContainer">
+    <div class="imovel">
+      <div id="imgSide">
+        <img src="{{anuncio.image.url}}" alt="">
+      </div>
+      <div id="otherSide">
+        <div id="local">
+          <p>{{anuncio.city}}, {{anuncio.state}}</p>
+          <span></span>
+        </div>
+        <p id="desc">{{anuncio.street}}, {{anuncio.area}} metros quadrados,  {{anuncio.rooms}} quartos...</p>
+        <p id="desc">{{anuncio.contact_user}}, {{anuncio.type}} : {{anuncio.estate}}</p>
+        <div id="infoImovel">
+          <i class="fa-solid fa-chart-area"></i><span>{{anuncio.area}}m²</span>
+          <i class="fa-solid fa-bed"></i><span>{{anuncio.rooms}}</span>
+          <i class="fa-solid fa-shower"></i><span>{{anuncio.bath}}</span>
+        </div>
+        <div id="finalizarCompra">
+          <span>R${{anuncio.price}}</span>
+        </div>
+      </div>
+    </div>
+{%endfor%}
+{% endblock %}

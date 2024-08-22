@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'my_app/styles/LoginCad.css' %}">
+</head>
+<body>
+    <div id="container">
+        <div id="containerImg">
+            <img src="{% static 'my_app/assets/password.svg'%}" alt="">
+        </div>
+        <div id="logCadContainer">
+          <div id="title">
+            <h3>login</h3>
+          </div>
+          <form action="{% url 'login' %}" method="POST" id="form"> {% csrf_token %}
+            <div id="inputLineUser">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Exemplo " id="user" name="username">.
+            </div>
+            <div id="inputLine">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Ex-12345" id="pass" name="password">
+              <i class="fa-regular fa-eye-slash" onclick="change('eye')" id="eye"></i>
+            </div>
+        
+          <div id="submit">
+            <button onclick="verify()">Logar</button>
+            <p id="es">Ainda não tem uma conta? <a href="{% url 'cad' %}">Clique aqui.</a></p>
+          </div>
+        </form>
+        </div>
+    </div>
+    <script src="{% static 'my_app/scripts/loginCad.js' %}"></script>
+</body>
+</html>

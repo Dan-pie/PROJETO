@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Resultados da pesquisa</h1>
+  <ul>
+    {% for imovel in imoveis %}
+      <li>{{ imovel.nome }}</li>
+    {% empty %}
+      <li>Nenhum resultado encontrado.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

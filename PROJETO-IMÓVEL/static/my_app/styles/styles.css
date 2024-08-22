@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0;
+  
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+header{
+  margin: 15px;
+  
+
+  display: flex;
+  justify-content: space-between;
+}
+header span{
+  color: #7b2cbf;
+}
+nav{
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+nav p{
+  transition: all ease 0.3s;
+}
+nav p:hover{
+  color: #7b2cbf;
+  cursor: pointer;
+}
+#cadButton{
+  padding: 10px;
+
+  background-color: #7b2cbf;
+  color: #fff;
+  border: 2px solid #7b2cbf;
+  border-radius: 10px;
+
+  transition: all ease 0.3s;
+}
+#cadButton:hover{
+  background-color: #7b2cbf;
+  cursor: pointer;
+}
+#logButton{
+  padding: 10px 15px;
+
+  background-color: transparent;
+  color: #7b2cbf;
+  border: 2px solid #7b2cbf;
+  border-radius: 10px;
+
+  transition: all ease 0.3s;
+}
+#logButton:hover{
+  background-color: #7b2cbf;
+  color: #fff;
+}
+main{
+  display: flex;
+}
+aside{
+  margin-top: 20px;
+  margin-left: 30px;
+  
+  display: inline-block;
+}
+#buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 10px;
+}
+.buttonSelect{
+  color: #7b2cbf;
+}
+#c, #a{
+  margin: 5px;
+  
+  border: 0;
+  background-color: transparent;
+}
+#borderBottom{
+  height: 2px;
+  width: 100%;
+  
+  background: linear-gradient(to right, #7b2cbf 50%, #ccc 50%);
+}
+#select{
+  margin: 10px;
+  padding: 15px;
+  
+  border-bottom: 2px solid #ccc;
+}
+label{
+  color: #898989;
+}
+#selectContainer{
+  padding: 8px 15px;
+  
+  display: flex;
+  justify-content: center;
+  
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #ccc;
+}
+#iContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#iContainer i{
+  color: #7b2cbf;
+}
+.preco{
+  margin: 10px;
+  padding: 15px;
+  
+  border-bottom: 2px solid #ccc;
+}
+#p{
+  color: #898989;
+}
+#preco label{
+  color: #ccc;
+}
+.inputLineSize{
+  padding: 5px;
+  margin-right: 5px;
+  
+  display: flex;
+  
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.inputLinePreco{
+  padding: 5px;
+  margin-right: 5px;
+
+  display: flex;
+
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.inputLinePreco input{
+  width: 100px;
+  
+  border: 0;
+  background-color: transparent;
+  color: #ccc;
+  outline: 0;
+}
+.inputLineSize input{
+  width: 100px;
+
+  border: 0;
+  background-color: transparent;
+  color: #ccc;
+  outline: 0;
+}
+.buttons{
+  display: flex;
+}
+.inputLinePreco p{
+  color: #7b2cbf;
+}
+.inputLineSize p{
+  color: #7b2cbf;
+}
+#info{
+  margin: 10px;
+  padding: 15px;
+
+  
+  border-bottom: 2px solid #ccc;
+}
+.infoContainerbutton{
+  padding: 8px 15px;
+  
+  height: 40px;
+  width: 65px;
+  
+  background-color: transparent;
+  color: #7b2cbf;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  
+  transition: 0.3s all ease;
+}
+#submit{
+  padding: 10px;
+  margin: 10px;
+  
+  display: flex;
+  justify-content: space-between;
+}
+#limpar{
+  padding: 10px;
+  
+  background-color: transparent;
+  color: #7b2cbf;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#enviar{
+  padding: 10px;
+
+  background-color: #7b2cbf;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#main{
+  display: flex;
+  flex-direction: column;
+  
+  width: 100%;
+}
+#searchBarContainer{
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
+  
+  width: 100%;
+}
+#searchBar{
+  padding: 10px;
+  
+  width: 90%;
+  
+  display: flex;
+  align-items: center;
+  
+  border: 1px solid #7b2cbf;
+  border-radius: 3px
+}
+#searchBar input{
+  width: 100%;
+  
+  outline: 0;
+  border: 0;
+}
+#searchBar i{
+  color: #7b2cbf;
+}
+#iAf{
+  margin: 5px;
+  
+  display: flex;
+  justify-content: space-between;
+  
+  width: 90%;
+}
+#filtro{
+  display: flex;
+  align-items: center;
+}
+#filtro i{
+  color: #7b2cbf;
+}
+#filtro p{
+  color: #898989;
+}
+#amount p{
+  color: #ccc;
+  font-size: small;
+}
+#amount span{
+  color: #898989;
+}
+#optionsContainer{
+  padding: 10px;
+  margin-top: 10px;
+  
+  position: absolute;
+  display: none;
+  
+  width: 265px;
+  height: 150px;
+  overflow-x: auto;
+  background-color: #fff;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  font-size: small;
+  color: #898989;
+  z-index: 1;
+}
+.option{
+  margin-left: 15px;
+  gap: 3px;
+  
+  display: flex;
+  
+  color: #ccc;
+}
+.infoContainerbuttonclicked{
+  padding: 8px 15px;
+
+  height: 40px;
+  width: 65px;
+
+  background-color: transparent;
+  color: #7b2cbf;
+  border: 1px solid #7b2cbf;
+  border-radius: 3px;
+  
+  transition: 0.3s all ease;
+}
+#imoveisContainer{
+  padding: 10px;
+  margin-top: 20px;
+}
+.imovel{
+  margin-bottom: 30px;
+  
+  display: flex;
+  
+  height: 170px;
+  width: 94.5%;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#imgSide img{
+  height: 170px;
+  width: 250px;
+  
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#otherSide{
+  margin: 5px;
+}
+#local{
+  font-size: small;
+}
+#local p{
+  color: #898989;
+}
+#local span{
+  color: #ccc;
+}
+#desc{
+  font-size: small;
+  color: #898989;
+}
+#infoImovel{
+  margin-top: 10px;
+  
+  color: #898989;
+  font-size: small;
+}
+#finalizarCompra{
+  height: 35%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#finalizarCompra button{
+  padding: 8px;
+
+  background-color: #7b2cbf;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
